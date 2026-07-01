@@ -76,7 +76,7 @@ export function Hero() {
 
       {/* Functional search bar */}
       <div className="relative z-20 container-x">
-        <form onSubmit={submit} className="-mt-24 md:-mt-16 mb-6 relative bg-white rounded-2xl shadow-[0_30px_60px_-20px_rgba(16,24,38,0.45)] p-2 md:p-2.5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr_auto] gap-2">
+        <form onSubmit={submit} className="-mt-24 md:-mt-16 mb-6 relative bg-white rounded-2xl shadow-[0_30px_60px_-20px_rgba(16,24,38,0.45)] overflow-hidden p-2 md:p-2.5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr_auto] gap-2">
           <label className="px-4 py-2 rounded-xl hover:bg-sand transition flex items-center gap-3 min-w-0">
             <Search size={16} className="text-charcoal/45 shrink-0"/>
             <div className="min-w-0 flex-1">
@@ -100,7 +100,7 @@ export function Hero() {
             <div className="text-[10px] uppercase tracking-wider text-charcoal/55 font-semibold">Date</div>
             <input type="date" value={date} onChange={e => setDate(e.target.value)} className="w-full text-navy font-display font-semibold bg-transparent focus:outline-none text-sm"/>
           </label>
-          <button type="submit" className="btn-gold !rounded-xl !py-3">Search</button>
+          <button type="submit" className="btn-gold !w-full sm:!w-auto !rounded-xl !py-3">Search</button>
         </form>
       </div>
     </section>

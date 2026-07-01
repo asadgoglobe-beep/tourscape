@@ -20,7 +20,7 @@ export function Support() {
               <h3 className="mt-2 font-display font-bold text-white text-3xl md:text-4xl max-w-xl leading-tight">How can we help you plan the perfect UAE trip?</h3>
               <p className="mt-3 text-white/65 max-w-lg">Our team is online every day of the year. Pick the channel that works for you.</p>
             </div>
-            <div className="grid sm:grid-cols-3 gap-3 w-full lg:w-auto lg:min-w-[640px]">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 w-full lg:w-auto lg:max-w-[640px]">
               {channels.map(({ Icon, label, value, href, accent }, i) => (
                 <motion.a key={label} href={href} target={href.startsWith("http") ? "_blank" : undefined} rel="noreferrer"
                   initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4, delay: i * 0.07 }}

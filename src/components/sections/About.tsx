@@ -13,11 +13,11 @@ export function About() {
           <div className="aspect-[4/5] rounded-3xl overflow-hidden">
             <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=900&q=80" alt="" className="h-full w-full object-cover" />
           </div>
-          <div className="absolute -bottom-6 -right-2 md:-right-8 bg-white rounded-2xl shadow-soft p-5 max-w-[220px]">
+          <div className="relative mt-5 sm:absolute sm:-bottom-6 sm:-right-2 md:sm:-right-8 bg-white rounded-2xl shadow-soft p-5 max-w-[220px] w-full sm:w-auto">
             <div className="font-display font-bold text-4xl text-gold">12k+</div>
             <div className="text-sm text-charcoal/70 mt-1">Happy travellers welcomed to the UAE since 2018.</div>
           </div>
-          <div className="absolute -top-4 -left-2 md:-left-6 bg-navy text-white rounded-2xl p-4 hidden md:block animate-floaty">
+          <div className="absolute -top-4 -left-2 md:-left-6 bg-navy text-white rounded-2xl p-4 hidden sm:block animate-floaty">
             <div className="text-[11px] uppercase tracking-wider text-gold-light">Trusted by</div>
             <div className="font-display font-bold text-lg">TripAdvisor · Viator</div>
           </div>

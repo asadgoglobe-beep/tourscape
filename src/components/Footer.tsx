@@ -41,7 +41,7 @@ export function Footer() {
               Desert sunsets & secret deals — straight to your inbox.
             </h3>
           </div>
-          <form className="flex gap-2 w-full" onSubmit={(e) => e.preventDefault()}>
+          <form className="flex flex-col gap-2 w-full sm:flex-row" onSubmit={(e) => e.preventDefault()}>
             <input
               type="email"
               required
